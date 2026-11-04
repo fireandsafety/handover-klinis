@@ -1,0 +1,338 @@
+<!--bodyclass:bg-background font-body-md text-body-md text-on-surface antialiased--><aside class="fixed left-0 top-0 h-full w-64 bg-primary z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)] overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between bg-primary-container/40 shrink-0"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-secondary-container flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold leading-none">S</div><div class="flex flex-col"><span class="font-label-lg text-label-lg text-on-primary tracking-tight font-bold leading-tight">SILOAM</span><span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Inpatient Ward</span></div></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-primary-container text-primary-fixed">EMR-v4</span></div><div class="px-space-md py-space-sm"><p class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim/70 px-space-md mb-space-xs">Clinical Workflow</p><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container-lowest/10 text-on-primary font-bold border-l-[3px] border-secondary-container pl-[9px]"><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="pasien &amp; handover" data-path="pasien-and-handover" href="#">Pasien &amp; Handover</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="serah terima shift" data-path="serah-terima-shift" href="#">Serah Terima Shift</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="impor census" data-path="impor-census" href="#">Impor Census</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="tindak lanjut" data-path="tindak-lanjut" href="#">Tindak Lanjut</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="riwayat impor" data-path="riwayat-impor" href="#">Riwayat Impor</a></nav></div><div class="px-space-md py-space-sm"><p class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim/70 px-space-md mb-space-xs">Governance &amp; Unit</p><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container-lowest/10 text-on-primary font-bold border-l-[3px] border-secondary-container pl-[9px]"><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="dashboard manajemen" data-path="w-10-dashboard-manajemen-and-tata-kelola" href="#">Dashboard Manajemen</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="pengguna &amp; hak akses" data-path="w-11-pengguna-and-hak-akses-users-and-roles" href="#">Pengguna &amp; Hak Akses</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="master ward &amp; sesi" data-path="w-12-master-ward-and-sesi-handover" href="#">Master Ward &amp; Sesi</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="jejak audit (audit log)" data-path="w-13-jejak-audit-audit-log" href="#">Jejak Audit (Audit Log)</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="keamanan &amp; retensi" data-path="w-14-keamanan-and-retensi" href="#">Keamanan &amp; Retensi</a></nav></div></div><div class="p-space-md mx-space-md mb-space-md rounded-xl bg-primary-container/40 flex items-center justify-between shrink-0"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary-container text-[20px]">verified</span><div><p class="font-label-sm text-label-sm text-on-primary font-bold leading-tight">KARS Akreditasi</p><p class="font-label-sm text-label-sm text-primary-fixed-dim leading-none">Paripurna 2024</p></div></div><span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">info</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl z-40 flex items-center justify-between px-margin-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg font-bold"><span class="material-symbols-outlined text-[18px]">domain</span><span>Lt. 7 Rawat Inap Dewasa (W-07A)</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-secondary-container/20 text-on-secondary-container font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Sesi {{sesi.sesi}}</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low text-on-surface-variant font-data-mono text-data-mono"><span class="material-symbols-outlined text-[16px] text-outline">lock_clock</span><span>Auto-lock: {{set.autolock}}m</span></div><button class="relative p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-lg text-label-lg text-on-surface leading-tight font-bold">{{me.nama}}</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">RMO / DPJP</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-margin-desktop py-space-xl bg-background min-h-screen"><div class="flex flex-col w-full gap-space-xl">
+
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="hover:text-primary cursor-pointer transition-colors">Tata Kelola Sistem</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Konfigurasi Master</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-bold">Modul W-12</span>
+</nav>
+<div class="flex items-center gap-space-md">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Master Ward &amp; Jadwal Sesi Handover</h1>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">PRD 4.2 / FR-6</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+        Pemetaan sinkronisasi nilai Ward Excel EMR ke unit aplikasi, jam cut-off serah terima dinas terintegrasi, dan batas pagar pengaman census otomatis.
+      </p>
+</div>
+
+<div class="flex items-center gap-space-sm shrink-0">
+
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary shadow-sm font-label-lg text-label-lg font-bold transition-all" data-act="ward-baru" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Tambah Pemetaan Ward</span>
+</button>
+</div>
+</section>
+
+<section class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Unit Terpetakan</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold mt-1">{{k.unit}} Unit</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">{{k.aktif}} Aktif • {{k.nonaktif}} Nonaktif</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">apartment</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total Kapasitas Bed</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold mt-1">{{k.kap}} Bed</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kapasitas Rawat Inap Aktif</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">single_bed</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Jadwal Sesi Shift</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold mt-1">2 Sesi / Hari</span>
+<span class="font-body-sm text-body-sm text-secondary-container font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>Sesi {{s.SESI_1}} | {{s.SESI_2}} · Libur: {{s.SESI_LIBUR}}</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">pace</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pagar Census (FR-1)</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold mt-1">±{{s.GUARD_PERSEN}}% Drop</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Auto KRS ≥2x Impor Absen</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">shield_lock</span>
+</div>
+</div>
+</section>
+
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-1.5 h-6 rounded-full bg-secondary-container"></div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+              Tabel Pemetaan Nilai Ward EMR (assign_diagnosis_*.xlsx) ke Bangsal Handover
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Harmonisasi string sheet EMR Doctor-Diagnosis dengan modul handover shift bedside.
+            </p>
+</div>
+</div>
+
+<div class="flex items-center gap-space-sm w-full md:w-80">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span>
+<input class="w-full bg-surface-container-low pl-9 pr-space-md py-1.5 rounded-lg text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Cari nilai EMR atau unit bangsal..." type="text"/>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+</button>
+</div>
+</div>
+
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">policy</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Aturan Sinkronisasi EMR (PRD Section 4.2):</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Satu nilai Ward EMR = satu daftar handover tanpa dipecah. Kelompok gabungan seperti 
+            <span class="font-data-mono text-data-mono font-bold text-on-surface bg-surface-container px-1 py-0.5 rounded">ICU / HCU / ICCU / PICU / NICU / PERINA</span> 
+            dan 
+            <span class="font-data-mono text-data-mono font-bold text-on-surface bg-surface-container px-1 py-0.5 rounded">CHRYSANT / FORTUNE</span> 
+            ditangani mutlak sebagai satu tim kerja terpadu untuk memastikan kontinuitas perawatan kritis.
+          </p>
+</div>
+</div>
+</div>
+
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l-lg">Nilai Ward EMR (Source Excel)</th>
+<th class="py-space-sm px-space-md">Unit Handover (Target Sistem)</th>
+<th class="py-space-sm px-space-md">Tipe Pelayanan Unit</th>
+<th class="py-space-sm px-space-md text-center">Kapasitas</th>
+<th class="py-space-sm px-space-md text-center">Status Sinkronisasi</th>
+<th class="py-space-sm px-space-md text-right rounded-r-lg">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent" data-slot="rows"></tbody>
+</table>
+</div>
+</section>
+
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-space-xs">
+<div class="w-1.5 h-6 rounded-full bg-primary"></div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            Pengaturan Jadwal Sesi Dinas Handover
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Konfigurasi waktu transisi antar shift tim medis &amp; perawat.
+          </p>
+</div>
+</div>
+
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">
+          Hari Kerja (Senin — Sabtu)
+        </span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Sesi 1 (Pagi)</span>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest px-space-sm py-1.5 rounded text-on-surface font-data-mono text-data-mono font-bold text-center focus:ring-2 focus:ring-primary focus:outline-none" data-set="SESI_1" type="text" value="07:00"/>
+<span class="absolute right-2 top-1.5 font-label-sm text-label-sm text-outline">WIB</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dinas Malam → Pagi</span>
+</div>
+
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Sesi 2 (Sore)</span>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest px-space-sm py-1.5 rounded text-on-surface font-data-mono text-data-mono font-bold text-center focus:ring-2 focus:ring-primary focus:outline-none" data-set="SESI_2" type="text" value="15:30"/>
+<span class="absolute right-2 top-1.5 font-label-sm text-label-sm text-outline">WIB</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dinas Pagi → Sore</span>
+</div>
+
+
+</div>
+</div>
+
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Mode Hari Libur &amp; Minggu</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Serah terima gabungan DPJP dan tim on-call residen</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Jam Handover Gabungan:</span>
+<div class="relative w-32">
+<input class="w-full bg-surface-container-lowest px-space-sm py-1 rounded text-on-surface font-data-mono text-data-mono font-bold text-center focus:ring-2 focus:ring-primary focus:outline-none" data-set="SESI_LIBUR" type="text" value="08:00"/>
+<span class="absolute right-2 top-1 font-label-sm text-label-sm text-outline">WIB</span>
+</div>
+</div>
+</div>
+
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold">Offset Waktu Impor Census Otomatis</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low px-space-md py-2 rounded-lg text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary focus:outline-none appearance-none" data-set="OFFSET_IMPOR_MENIT">
+<option selected="" value="30">30 menit sebelum sesi (06:30 &amp; 15:00 WIB - Direkomendasikan SOP)</option>
+<option value="45">45 menit sebelum sesi (06:15 &amp; 14:45 WIB)</option>
+<option value="60">60 menit sebelum sesi (06:00 &amp; 14:30 WIB)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Penyelarasan berkas excel dari server HIS Siloam dieksekusi sebelum rapat dinas dimulai.
+        </p>
+</div>
+
+<div class="bg-error-container/40 p-space-md rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-error-container font-bold">Ambang Peringatan Census Usang (Stale Warning)</span>
+<p class="font-body-sm text-body-sm text-on-error-container leading-relaxed">
+            Pengecekan otomatis berjalan <strong>15 menit sebelum handover</strong> (06:45 &amp; 15:15 WIB). Bila berkas belum diunggah ulang, indikator sistem di seluruh bangsal akan berubah merah mencolok.
+          </p>
+</div>
+</div>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-space-xs">
+<div class="w-1.5 h-6 rounded-full bg-primary-container"></div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            Pagar Pengaman Otomasi Census (FR-1 Guardrails)
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Validasi integritas data EMR untuk mencegah kesalahan klinis massal.
+          </p>
+</div>
+</div>
+
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-bold">
+            Ambang Batas Penurunan Pasien Aktif (% Drop Alert)
+          </label>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary font-bold">Proteksi Data Kosong</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative w-28 shrink-0">
+<input class="w-full bg-surface-container-low px-space-sm py-2 rounded-lg text-on-surface font-data-mono text-data-mono font-bold text-center focus:ring-2 focus:ring-primary focus:outline-none" type="number" value="30"/>
+<span class="absolute right-3 top-2 font-label-md text-label-md text-outline font-bold">%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+            Bila jumlah pasien aktif turun &gt;30% dibanding impor sebelumnya, proses ditahan dan butuh otorisasi PIN / Admin.
+          </p>
+</div>
+</div>
+
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold">
+          Toleransi Pasien Absen Sebelum KRS Otomatis (Missing Count)
+        </label>
+<div class="flex items-center gap-space-sm">
+<div class="relative w-28 shrink-0">
+<input class="w-full bg-surface-container-low px-space-sm py-2 rounded-lg text-on-surface font-data-mono text-data-mono font-bold text-center focus:ring-2 focus:ring-primary focus:outline-none" type="number" value="2"/>
+<span class="absolute right-3 top-2 font-label-md text-label-md text-outline font-bold">x</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+            Pasien otomatis diarsipkan / dinyatakan pulang (KRS) setelah 2 kali impor berturut-turut tidak muncul di file census.
+          </p>
+</div>
+</div>
+
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">
+          Integritas Alokasi Bed &amp; Pasien
+        </span>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Tolak Duplikasi No. Rekam Medis</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Blokir berkas bila MRN yang sama muncul pada baris berbeda</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Peringatan Bed Ganda (Dual Occupancy Alert)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kirim peringatan darurat jika dua nama menempati kode bed sama</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface-variant after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold">
+          Notifikasi Audit Google Workspace (Email Alert)
+        </label>
+<div class="flex flex-wrap items-center gap-space-xs p-space-sm bg-surface-container-low rounded-lg min-h-11">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded text-primary font-data-mono text-data-mono text-xs">
+            admin-emr@siloamhospitals.com
+            <button class="text-outline hover:text-error" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded text-primary font-data-mono text-data-mono text-xs">
+            komite.medik@siloamhospitals.com
+            <button class="text-outline hover:text-error" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</span>
+<input class="bg-transparent text-on-surface font-body-sm text-body-sm px-1 py-0.5 focus:outline-none flex-1 min-w-[120px]" placeholder="+ Tambah email..." type="text"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Kirim rekap harian instruksi dokter yang terlambat diverifikasi &amp; peringatan census usang.
+        </p>
+</div>
+</div>
+</section>
+
+<section class="sticky bottom-4 z-30 bg-surface-container-lowest/95 backdrop-blur-md rounded-xl p-space-md shadow-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">info</span>
+<span class="font-body-sm text-body-sm">
+        Perubahan konfigurasi master akan berlaku efektif pada seluruh bangsal di <strong>sesi handover berikutnya</strong> (15:30 WIB).
+      </span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg font-bold transition-colors" data-act="jadwal-reset" type="button">
+        Reset ke Bawaan SOP RS
+      </button>
+<button class="flex items-center gap-space-xs px-space-lg py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-md transition-all" data-act="jadwal-simpan" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Simpan Perubahan Konfigurasi (Save Master Settings)</span>
+</button>
+</div>
+</section>
+</div>
+</main></div>

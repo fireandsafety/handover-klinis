@@ -1,0 +1,440 @@
+<!--bodyclass:bg-surface font-body-md text-on-surface antialiased--><aside class="hidden lg:flex fixed left-0 top-0 h-full w-60 bg-primary z-50 flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Siloam" class="h-8 w-auto object-contain" src="assets/siloam-white.png"/><div class="flex flex-col"><span class="text-on-primary font-headline-sm text-headline-sm leading-tight tracking-tight">Siloam</span><span class="text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider">Hospitals</span></div></div><div class="mt-space-sm px-space-sm py-space-xs rounded bg-primary-container/40 flex items-center justify-between"><div class="flex items-center gap-space-xs text-on-primary-fixed font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px] text-secondary-container">local_hospital</span><span>{{rs.unit}}</span></div><span class="w-2 h-2 rounded-full bg-secondary-container"></span></div></div><nav class="mt-space-sm flex flex-col" data-active-classes="bg-white/10 text-on-primary font-semibold border-l-[3px] border-secondary-container"><a class="flex items-center justify-between px-space-lg py-space-md text-on-primary/70 hover:bg-white/5 hover:text-on-primary transition-colors" data-nav="clinical_notes pasien &amp; handover" data-path="pasien-dan-handover" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">clinical_notes</span><span class="font-label-lg text-label-lg">Pasien &amp; Handover</span></div></a><a class="flex items-center justify-between px-space-lg py-space-md text-on-primary/70 hover:bg-white/5 hover:text-on-primary transition-colors" data-nav="sync_alt serah terima shift 2" data-path="serah-terima-shift" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">sync_alt</span><span class="font-label-lg text-label-lg">Serah Terima Shift</span></div></a><a class="flex items-center justify-between px-space-lg py-space-md text-on-primary/70 hover:bg-white/5 hover:text-on-primary transition-colors" data-nav="upload_file impor census xlsx" data-path="impor-census" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">upload_file</span><span class="font-label-lg text-label-lg">Impor Census</span></div><span class="font-label-sm text-label-sm text-on-primary/40 font-data-mono">XLSX</span></a><a class="flex items-center justify-between px-space-lg py-space-md text-on-primary/70 hover:bg-white/5 hover:text-on-primary transition-colors" data-nav="task_alt tindak lanjut &amp; dash 3" data-path="tindak-lanjut-dan-dashboard" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">task_alt</span><span class="font-label-lg text-label-lg">Tindak Lanjut &amp; Dash</span></div><span class="bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm px-space-sm py-0.5 rounded-full font-bold">3</span></a><a class="flex items-center justify-between px-space-lg py-space-md text-on-primary/70 hover:bg-white/5 hover:text-on-primary transition-colors" data-nav="history riwayat impor" data-path="riwayat-impor" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-lg text-label-lg">Riwayat Impor</span></div></a><a class="flex items-center justify-between px-space-lg py-space-md text-on-primary/70 hover:bg-white/5 hover:text-on-primary transition-colors" data-nav="verified_user admin &amp; audit log" data-path="admin-dan-audit-log" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-label-lg text-label-lg">Admin &amp; Audit Log</span></div></a></nav></div><div class="p-space-lg bg-tertiary-container/30"><div class="flex items-start gap-space-sm mb-space-md"><div class="relative"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-container ring-2 ring-primary"></span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-sm text-label-sm text-on-primary font-bold truncate">{{me.nama}}</span><span class="font-body-sm text-body-sm text-on-primary-container truncate">{{me.peranLabel}}</span><div class="flex items-center gap-space-xs mt-0.5"><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary-container"></span><span class="font-label-sm text-label-sm text-secondary-fixed">Aktif Dinas</span></div></div></div><button class="w-full flex items-center justify-center gap-space-xs py-space-xs px-space-sm rounded bg-white/10 hover:bg-white/20 text-on-primary font-label-sm text-label-sm transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">logout</span><span>Keluar Sesi</span></button></div></aside><div class="lg:pl-60 flex flex-col min-h-screen"><header class="fixed top-0 left-0 lg:left-60 right-0 h-16 bg-primary-container z-40 shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-16 w-full px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="lg:hidden flex items-center gap-space-xs"><img alt="Siloam" class="h-7 w-auto object-contain" src="assets/siloam-white.png"/><span class="text-on-primary font-headline-sm text-headline-sm">Siloam</span></div><div class="hidden sm:flex items-center gap-space-xs py-1 px-space-sm rounded bg-primary/40"><span class="material-symbols-outlined text-[18px] text-secondary-container">apartment</span><span class="font-label-md text-label-md text-on-primary font-semibold">{{unit.nama}}</span><span class="text-on-primary-container font-body-sm text-body-sm"></span></div><div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full border border-secondary-container/60 bg-primary/30"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary-fixed font-semibold tracking-wide">Sesi {{sesi.sesi}}</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded bg-primary/30 text-on-primary-container font-data-mono text-body-sm"><span class="material-symbols-outlined text-[16px] text-secondary-container">lock_clock</span><span>Auto-lock: {{set.autolock}}m</span></div><button aria-label="Notifikasi Handover" class="relative p-space-xs rounded-full text-on-primary hover:bg-white/10 transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-primary-container"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 pb-20 lg:pb-0 bg-surface flex-1"><div class="flex flex-col w-full">
+
+<div class="px-margin lg:px-margin-desktop pt-space-md pb-space-lg flex flex-col gap-space-md">
+
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<a class="inline-flex items-center gap-space-xs text-primary hover:text-primary-container font-label-md text-label-md transition-colors group" data-nav="arrow_back kembali ke kartu handover tn." href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
+<span class="font-semibold">Kembali ke Kartu Handover {{p.inisial}} ({{p.bed}})</span>
+</a>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+          Mode Integrasi CPPT Client-Side
+        </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm font-data-mono">v2.4-MED</span>
+</div>
+</div>
+
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">W-04</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold">Alat Konversi Klinis</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Tempel &amp; Parsing Catatan Klinis SOAP</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Konversi otomatis catatan perkembangan pasien terintegrasi (CPPT/SOAP) dari EMR ke format SBAR Handover Rawat Inap secara instan dan tervalidasi.</p>
+</div>
+
+<div class="flex items-center gap-space-md self-start md:self-auto bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div class="w-10 h-10 rounded bg-primary-container/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">transform</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Target Sesi Dinas</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">Sore 15:30 • {{p.bed}}</span>
+</div>
+</div>
+</div>
+
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-wrap items-center justify-between gap-y-space-sm gap-x-space-lg text-on-surface">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">person</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">{{p.inisial}}</span>
+<span class="font-data-mono text-body-sm text-on-surface-variant bg-surface-container-highest px-1.5 py-0.5 rounded">MR {{p.mr}}</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-0.5 rounded text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">bed</span>
+<span class="font-label-md text-label-md font-bold">{{p.bed}}</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">stethoscope</span>
+<span class="font-body-sm text-body-sm">DPJP: <strong class="text-on-surface font-semibold">{{me.nama}}</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-semibold uppercase text-secondary">DX EMR:</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate max-w-md">{{p.dx}}</span>
+</div>
+</div>
+
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex-1 flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1.5">
+            Peringatan Kepatuhan Privasi (UU PDP No. 27/2022 &amp; Akreditasi RS)
+            <span class="bg-surface-container text-primary font-label-sm text-label-sm px-1.5 py-0.2 rounded font-semibold">Local Memory Only</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Parser memproses teks langsung di memori browser (Client-Side Sandbox) tanpa mengirim ke cloud eksternal. Jangan menempel data identitas yang tidak relevan (NIK, nomor KTP, atau kontak pribadi pasien).</span>
+</div>
+<button class="shrink-0 font-label-sm text-label-sm text-primary hover:text-primary-container font-semibold inline-flex items-center gap-1 self-start md:self-center" type="button">
+<span>Protokol Anonymizer</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+</div>
+</div>
+
+<div class="bg-primary text-on-primary rounded-xl p-space-lg shadow-md flex flex-col gap-space-md overflow-hidden relative">
+<div class="flex flex-wrap items-center justify-between gap-space-sm z-10">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">hub</span>
+<span class="font-label-lg text-label-lg font-bold tracking-wide">Diagram Alur Pemetaan Otomatis: EMR CPPT (SOAP) ➔ Handover (SBAR)</span>
+</div>
+<label class="flex items-center gap-2 cursor-pointer select-none bg-primary-container/80 px-space-sm py-1 rounded-full text-on-primary">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-secondary-container cursor-pointer" id="autoMapToggle" type="checkbox"/>
+<span class="font-label-sm text-label-sm font-semibold">Terapkan aturan cerdas ke kartu dinas sore</span>
+</label>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm z-10">
+
+<div class="bg-surface-container-lowest/10 backdrop-blur rounded-lg p-space-sm flex flex-col gap-1.5 hover:bg-surface-container-lowest/15 transition-colors">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="bg-primary-container px-1.5 py-0.5 rounded font-bold text-on-primary tracking-wider">[S] + [A] Parsial</span>
+<span class="material-symbols-outlined text-secondary-container text-[16px]">arrow_forward</span>
+<span class="text-secondary-fixed font-bold tracking-wider">[S] SITUATION</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary/80 line-clamp-2">Keluhan nyeri ulu hati memberat malam hari &amp; status perbaikan klinis saat ini.</p>
+</div>
+
+<div class="bg-surface-container-lowest/10 backdrop-blur rounded-lg p-space-sm flex flex-col gap-1.5 hover:bg-surface-container-lowest/15 transition-colors">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="bg-primary-container px-1.5 py-0.5 rounded font-bold text-on-primary tracking-wider">[DX] + Riwayat</span>
+<span class="material-symbols-outlined text-secondary-container text-[16px]">arrow_forward</span>
+<span class="text-secondary-fixed font-bold tracking-wider">[B] BACKGROUND</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary/80 line-clamp-2">Diagnosis terkonfirmasi Gastric Ulcer, riwayat terapi KCl drip &amp; PPI.</p>
+</div>
+
+<div class="bg-surface-container-lowest/10 backdrop-blur rounded-lg p-space-sm flex flex-col gap-1.5 hover:bg-surface-container-lowest/15 transition-colors">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="bg-primary-container px-1.5 py-0.5 rounded font-bold text-on-primary tracking-wider">[O] Fisik &amp; Lab</span>
+<span class="material-symbols-outlined text-secondary-container text-[16px]">arrow_forward</span>
+<span class="text-secondary-fixed font-bold tracking-wider">[A] ASSESSMENT</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary/80 line-clamp-2">TTV stabil, Kalium 3.3 post koreksi, nyeri tekan epigastrik (+).</p>
+</div>
+
+<div class="bg-surface-container-lowest/10 backdrop-blur rounded-lg p-space-sm flex flex-col gap-1.5 hover:bg-surface-container-lowest/15 transition-colors">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="bg-primary-container px-1.5 py-0.5 rounded font-bold text-on-primary tracking-wider">[P] Instruksi / Tx</span>
+<span class="material-symbols-outlined text-secondary-container text-[16px]">arrow_forward</span>
+<span class="text-secondary-fixed font-bold tracking-wider">[R] RECOMMENDATION</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary/80 line-clamp-2">Cek Kalium ulang 05:30 WIB, Omeprazole iv 18:00, awasi tanda melena.</p>
+</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+
+<section class="lg:col-span-6 flex flex-col gap-space-md bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm">1</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Catatan CPPT / SOAP Mentah</h2>
+</div>
+<span class="inline-flex items-center gap-1.5 bg-surface-container-low text-primary px-space-sm py-1 rounded text-label-sm font-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+            Format Terdeteksi: SOAP Standar EMR
+          </span>
+</div>
+
+<div class="flex flex-wrap items-center justify-between gap-space-xs bg-surface-container-low p-space-xs rounded-lg">
+<div class="flex items-center gap-1">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest hover:bg-surface-container text-primary font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1" id="btnLoadSample" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>Muat Contoh EMR</span>
+</button>
+<button class="px-space-sm py-1 rounded hover:bg-error-container hover:text-on-error-container text-on-surface-variant font-label-sm text-label-sm font-medium transition-colors flex items-center gap-1" id="btnClearInput" type="button">
+<span class="material-symbols-outlined text-[16px]">clear_all</span>
+<span>Bersihkan</span>
+</button>
+</div>
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1" id="btnReparse" type="button">
+<span class="material-symbols-outlined text-[16px]">autorenew</span>
+<span>Ulangi Deteksi</span>
+</button>
+</div>
+
+<div class="relative flex flex-col">
+<label class="sr-only" for="rawSoapInput">Teks SOAP Mentah</label>
+<textarea class="w-full rounded-lg bg-surface-container-low/60 p-space-md font-data-mono text-body-md text-on-surface leading-relaxed focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary-container transition-all resize-y placeholder:text-on-surface-variant/50" id="rawSoapInput" placeholder="Tempel catatan SOAP atau salin dari sistem EMR Siloam di sini..." rows="16"></textarea>
+</div>
+
+<div class="flex flex-wrap items-center justify-between gap-space-xs text-on-surface-variant">
+<div class="flex items-center gap-space-xs font-data-mono text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">pin</span>
+<span id="charLineCount">598 karakter / 14 baris (Maks. 50.000)</span>
+</div>
+
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm">Parser Mode:</span>
+<select aria-label="Parser Mode" class="bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded px-2 py-1 focus:outline-none cursor-pointer">
+<option selected="" value="auto">Otomatis (S/O/A/P Regex)</option>
+<option value="sbar">EMR SBAR Native</option>
+<option value="free">Teks Narasi Bebas (Heuristik)</option>
+</select>
+</div>
+</div>
+
+<div class="bg-surface-container-high/60 rounded-lg p-space-sm flex items-center gap-space-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">info</span>
+<span class="text-on-surface-variant">Tips: Awali paragraf dengan <code class="bg-surface-container-lowest px-1 rounded font-bold text-primary font-data-mono">S:</code>, <code class="bg-surface-container-lowest px-1 rounded font-bold text-primary font-data-mono">O:</code>, <code class="bg-surface-container-lowest px-1 rounded font-bold text-primary font-data-mono">A:</code>, atau <code class="bg-surface-container-lowest px-1 rounded font-bold text-primary font-data-mono">P:</code> untuk hasil pemisahan yang 100% presisi.</span>
+</div>
+</section>
+
+<section class="lg:col-span-6 flex flex-col gap-space-md">
+
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-sm">2</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Hasil Parsing &amp; Penyesuaian SBAR</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+              4 dari 4 Bagian Terpetakan
+            </span>
+</div>
+</div>
+
+<div class="flex flex-col gap-space-sm">
+
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all hover:shadow-md flex flex-col">
+
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center">S</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Subjective (Keluhan Pasien)</span>
+<span class="text-on-surface-variant font-data-mono text-body-sm">Baris 1-2</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Salin Bagian S" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Pulihkan" type="button">
+<span class="material-symbols-outlined text-[16px]">history</span>
+</button>
+</div>
+</div>
+
+<div class="p-space-md flex flex-col gap-space-xs">
+<label class="sr-only" for="parsedS">Teks Subjective</label>
+<textarea class="w-full bg-surface-container-lowest font-body-md text-body-md text-on-surface p-1 rounded focus:bg-surface-container-low focus:outline-none transition-colors resize-y leading-relaxed" id="parsedS" rows="3"></textarea>
+
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tag Klinis Terdeteksi:</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">Epigastric Pain 3/10</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">Nausea (-)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">Melena Negatif</span>
+</div>
+</div>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all hover:shadow-md flex flex-col">
+
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center justify-center">O</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Objective (TTV, Fisik &amp; Nilai Kritis Lab)</span>
+<span class="text-on-surface-variant font-data-mono text-body-sm">Baris 3-5</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Salin Bagian O" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+
+<div class="px-space-md pt-space-md grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+<div class="bg-surface-container-low p-space-xs rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tekanan Darah</span>
+<span class="font-data-mono text-body-md font-bold text-primary">120/75 <span class="text-label-sm font-normal text-on-surface-variant">mmHg</span></span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Denyut Nadi</span>
+<span class="font-data-mono text-body-md font-bold text-primary">82 <span class="text-label-sm font-normal text-on-surface-variant">bpm</span></span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Laju Nafas</span>
+<span class="font-data-mono text-body-md font-bold text-primary">18 <span class="text-label-sm font-normal text-on-surface-variant">x/m</span></span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">SpO2 / Suhu</span>
+<span class="font-data-mono text-body-md font-bold text-primary">98% <span class="text-label-sm font-normal text-on-surface-variant">/ 36.8°C</span></span>
+</div>
+</div>
+
+<div class="p-space-md flex flex-col gap-space-xs">
+<label class="sr-only" for="parsedO">Teks Objective</label>
+<textarea class="w-full bg-surface-container-lowest font-body-md text-body-md text-on-surface p-1 rounded focus:bg-surface-container-low focus:outline-none transition-colors resize-y leading-relaxed" id="parsedO" rows="4"></textarea>
+
+<div class="bg-surface-container p-space-xs rounded flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary">analytics</span>
+<span class="font-label-sm text-label-sm font-bold">Kalium Cito Post Koreksi: 3.3 mEq/L (Target ≥ 3.5)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-highest text-primary px-1.5 py-0.5 rounded font-semibold">Tervalidasi Lab</span>
+</div>
+</div>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all hover:shadow-md flex flex-col">
+
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-bold flex items-center justify-center">A</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Assessment (Penilaian Klinis)</span>
+<span class="text-on-surface-variant font-data-mono text-body-sm">Baris 6-7</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Salin Bagian A" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+
+<div class="p-space-md flex flex-col gap-space-xs">
+<label class="sr-only" for="parsedA">Teks Assessment</label>
+<textarea class="w-full bg-surface-container-lowest font-body-md text-body-md text-on-surface p-1 rounded focus:bg-surface-container-low focus:outline-none transition-colors resize-y leading-relaxed font-semibold text-primary" id="parsedA" rows="2"></textarea>
+<div class="flex items-center gap-space-xs text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">trending_up</span>
+<span>Progres: <strong class="text-primary font-semibold">Membaik secara klinis &amp; hemodinamik</strong></span>
+</div>
+</div>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all hover:shadow-md flex flex-col">
+
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded bg-tertiary-container text-on-primary font-label-md text-label-md font-bold flex items-center justify-center">P</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Plan ➔ SBAR Recommendation &amp; To-Do</span>
+<span class="text-on-surface-variant font-data-mono text-body-sm">Baris 8-13</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Salin Bagian P" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+
+<div class="p-space-md flex flex-col gap-space-sm">
+<label class="sr-only" for="parsedP">Teks Plan</label>
+<textarea class="w-full bg-surface-container-lowest font-body-md text-body-md text-on-surface p-1 rounded focus:bg-surface-container-low focus:outline-none transition-colors resize-y leading-relaxed font-data-mono text-[13px]" id="parsedP" rows="5"></textarea>
+
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<span class="font-label-sm text-label-sm font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">checklist</span>
+                  Instruksi Handover Shift Sore (To-Do Terdeteksi):
+                </span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs">
+<div class="p-space-xs rounded bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Omeprazole IV jam 18:00</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">water_drop</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Monitor drip KCl 21 tpm</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<div class="sticky bottom-0 left-0 right-0 z-30 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(0,23,87,0.08)] py-space-md px-margin lg:px-margin-desktop mt-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-md">
+
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-between sm:justify-start">
+<button class="px-space-md py-space-sm rounded bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span>Batal &amp; Kembali</span>
+</button>
+<span class="sm:hidden font-label-sm text-label-sm text-primary font-bold">{{p.bed}} • Siap</span>
+</div>
+
+<div class="hidden md:flex items-center gap-space-xs bg-surface-container-low px-space-md py-1.5 rounded-full text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Status: Terverifikasi Sintaks SOAP</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">• Siap Ditransfer ke Handover Kartu {{p.bed}} (Dinas Sore 15:30)</span>
+</div>
+
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-md py-space-sm rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5" id="btnPreviewModal" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Pratinjau SBAR Lengkap</span>
+</button>
+<button class="px-space-lg py-space-sm rounded bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold shadow-md hover:shadow-lg transition-all flex items-center gap-2" id="btnApplySbar" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">check_circle</span>
+<span>Terapkan ke Kartu SBAR Pasien</span>
+</button>
+</div>
+</div>
+</div>
+
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-primary/45 backdrop-blur-sm" id="modalSbarPreview">
+<div class="bg-surface-container-lowest rounded-xl max-w-2xl w-full p-space-lg shadow-xl flex flex-col gap-space-md max-h-[921px] overflow-y-auto">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</span>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Pratinjau Kartu SBAR Handover Rawat Inap</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">{{p.inisial}} ({{p.bed}}) • Shift Sore 15:30</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-low flex items-center justify-center text-on-surface-variant" id="btnClosePreview" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-md rounded-lg text-body-md">
+<div class="flex flex-col gap-1 bg-surface-container-lowest p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-wide uppercase flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span> S - Situation
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface" data-sb="s">Pasien {{p.inisial}} (Bed 06), keluhan nyeri ulu hati skala 3/10 memberat malam hari. Mual berkurang, nafsu makan mulai membaik. Kondisi klinis saat ini stabil.</p>
+</div>
+<div class="flex flex-col gap-1 bg-surface-container-lowest p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-wide uppercase flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span> B - Background
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface" data-sb="b">{{p.dx}} post terapi KCl infus 25 mEq. Hari rawat ke-2 di bawah DPJP {{me.nama}}.</p>
+</div>
+<div class="flex flex-col gap-1 bg-surface-container-lowest p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-wide uppercase flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span> A - Assessment
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface" data-sb="a">KU sedang, CM. TD 120/75, HR 82x/m, RR 18, SpO2 98%, Suhu 36.8C. Nyeri tekan epigastrium (+). Lab Cito 14:00: Kalium 3.3 mEq/L (membaik dari 2.7), Hb 12.1, Leukosit 8.400.</p>
+</div>
+<div class="flex flex-col gap-1 bg-surface-container-lowest p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-wide uppercase flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span> R - Recommendation
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface" data-sb="r">1. Lanjut diet lunak lambung rendah serat.<br/>2. IVFD NaCl 0.9% + KCl drip 25 mEq/24 jam 21 tpm.<br/>3. Injeksi Omeprazole 40mg IV jam 18:00.<br/>4. Cek ulang Kalium besok 05:30 WIB.</p>
+</div>
+</div>
+
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-1.5 rounded hover:bg-surface-container font-label-md text-label-md text-on-surface-variant font-semibold" id="btnCancelModal" type="button">Tutup</button>
+<button class="px-space-md py-1.5 rounded bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center gap-1.5" id="btnConfirmApply" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">done_all</span>
+<span>Konfirmasi &amp; Masukkan ke Handover</span>
+</button>
+</div>
+</div>
+</div>
+
+
+</div></main><nav class="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-surface-container-lowest shadow-[0_-2px_10px_rgba(0,23,87,0.06)] z-50 flex items-center justify-around px-space-sm" data-active-classes="text-primary font-bold"><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface py-1 relative" data-nav="clinical_notes pasien" data-path="pasien-dan-handover" href="#"><span class="material-symbols-outlined text-[22px]">clinical_notes</span><span class="font-label-sm text-label-sm">Pasien</span></a><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface py-1 relative" data-nav="sync_alt handover" data-path="serah-terima-shift" href="#"><span class="material-symbols-outlined text-[22px]">sync_alt</span><span class="font-label-sm text-label-sm">Handover</span><span class="absolute top-0 right-2 w-2 h-2 rounded-full bg-secondary-container"></span></a><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface py-1 relative" data-nav="task_alt tugas" data-path="tindak-lanjut-dan-dashboard" href="#"><span class="material-symbols-outlined text-[22px]">task_alt</span><span class="font-label-sm text-label-sm">Tugas</span><span class="absolute top-0 right-1 w-2 h-2 rounded-full bg-secondary-container"></span></a><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface py-1" data-nav="upload_file impor" data-path="impor-census" href="#"><span class="material-symbols-outlined text-[22px]">upload_file</span><span class="font-label-sm text-label-sm">Impor</span></a><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface py-1" data-nav="more_horiz menu" data-path="admin-dan-audit-log" href="#"><span class="material-symbols-outlined text-[22px]">more_horiz</span><span class="font-label-sm text-label-sm">Menu</span></a></nav></div>

@@ -1,0 +1,250 @@
+<!--bodyclass:bg-background font-body-md text-body-md text-on-surface antialiased--><aside class="fixed left-0 top-0 h-full w-64 bg-primary z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)] overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between bg-primary-container/40 shrink-0"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-secondary-container flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold leading-none">S</div><div class="flex flex-col"><span class="font-label-lg text-label-lg text-on-primary tracking-tight font-bold leading-tight">SILOAM</span><span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Inpatient Ward</span></div></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-primary-container text-primary-fixed">EMR-v4</span></div><div class="px-space-md py-space-sm"><p class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim/70 px-space-md mb-space-xs">Clinical Workflow</p><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container-lowest/10 text-on-primary font-bold border-l-[3px] border-secondary-container pl-[9px]"><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="pasien &amp; handover" data-path="pasien-and-handover" href="#">Pasien &amp; Handover</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="serah terima shift" data-path="serah-terima-shift" href="#">Serah Terima Shift</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="impor census" data-path="impor-census" href="#">Impor Census</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="tindak lanjut" data-path="tindak-lanjut" href="#">Tindak Lanjut</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="riwayat impor" data-path="riwayat-impor" href="#">Riwayat Impor</a></nav></div><div class="px-space-md py-space-sm"><p class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim/70 px-space-md mb-space-xs">Governance &amp; Unit</p><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container-lowest/10 text-on-primary font-bold border-l-[3px] border-secondary-container pl-[9px]"><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="dashboard manajemen" data-path="dashboard-manajemen" href="#">Dashboard Manajemen</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="pengguna &amp; hak akses" data-path="pengguna-and-hak-akses" href="#">Pengguna &amp; Hak Akses</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="master ward &amp; sesi" data-path="master-ward-and-sesi" href="#">Master Ward &amp; Sesi</a><a class="flex items-center px-space-md py-space-sm rounded-lg bg-surface-container-lowest/10 text-on-primary font-bold border-l-[3px] border-secondary-container pl-[9px] transition-colors font-label-lg text-label-lg" data-nav="jejak audit (audit log)" data-path="w-13-jejak-audit-audit-log" href="#">Jejak Audit (Audit Log)</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="keamanan &amp; retensi" data-path="keamanan-and-retensi" href="#">Keamanan &amp; Retensi</a></nav></div></div><div class="p-space-md mx-space-md mb-space-md rounded-xl bg-primary-container/40 flex items-center justify-between shrink-0"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary-container text-[20px]">verified</span><div><p class="font-label-sm text-label-sm text-on-primary font-bold leading-tight">KARS Akreditasi</p><p class="font-label-sm text-label-sm text-primary-fixed-dim leading-none">Paripurna 2024</p></div></div><span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">info</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl z-40 flex items-center justify-between px-margin-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg font-bold"><span class="material-symbols-outlined text-[18px]">domain</span><span>Lt. 7 Rawat Inap Dewasa (W-07A)</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-secondary-container/20 text-on-secondary-container font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Sesi {{sesi.sesi}}</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low text-on-surface-variant font-data-mono text-data-mono"><span class="material-symbols-outlined text-[16px] text-outline">lock_clock</span><span>Auto-lock: {{set.autolock}}m</span></div><button class="relative p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-lg text-label-lg text-on-surface leading-tight font-bold">{{me.nama}}</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">RMO / DPJP</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-margin-desktop py-space-xl bg-background min-h-screen"><div class="flex flex-col w-full gap-y-space-lg">
+
+<div class="flex flex-col gap-y-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="hover:text-primary cursor-pointer transition-colors">Tata Kelola Sistem</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Audit &amp; Akuntabilitas</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-bold">Modul W-13</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-y-0.5">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Jejak Audit &amp; Deteksi Pola Akses (Audit Log)</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Log Append-Only
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Pencatatan mutasi permanen append-only seluruh aktivitas pengguna, otorisasi data rekam medis, dan peringatan kepatuhan Permenkes No. 24/2022 &amp; UU PDP.
+        </p>
+</div>
+
+<div class="flex items-center gap-space-sm shrink-0">
+
+
+</div>
+</div>
+</div>
+
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">shield_with_heart</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-bold">Integritas Arsip Rekam Medis Elektronik (Append-Only Cryptographic Ledger)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Log audit disimpan di sheet Audit_Log terproteksi; hanya Admin yang dapat membaca.</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold shrink-0 self-start md:self-center">
+<span class="material-symbols-outlined text-[16px] text-secondary">history</span>
+<span>Retensi log mengikuti kebijakan RS</span>
+</div>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Entri Log (24 Jam)</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl text-primary font-bold">{{k.total}}</div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">{{k.normal}}</span> Akses Normal <span class="text-outline">·</span> <span class="font-data-mono text-data-mono font-bold text-secondary">{{k.mutasi}}</span> Mutasi Klinis
+        </div>
+</div>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Buka Identitas (Unmasking)</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container/30 flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</div>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl text-primary font-bold">{{k.unmask}}<span class="font-label-md text-label-md text-on-surface-variant font-normal">Kali</span></div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[12px] mr-1 text-secondary">verified</span> Tercatat Akuntabel
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prinsip initials unmasked</span>
+</div>
+</div>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Pola Tidak Wajar</span>
+<div class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl text-error font-bold">{{k.pola}}<span class="font-label-md text-label-md text-on-surface-variant font-normal">Insiden</span></div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+            Butuh Review Komite Kredensial
+          </span>
+</div>
+</div>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Integritas Rantai Audit</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">enhanced_encryption</span>
+</div>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl text-primary font-bold">Append-only<span class="font-label-md text-label-md text-on-surface font-semibold"></span></div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>Log tidak dapat diubah dari aplikasi</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+
+<div class="xl:col-span-9 flex flex-col gap-y-space-md">
+
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-y-space-sm">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm">
+
+<div class="md:col-span-3 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold">Rentang Waktu</label>
+<div class="relative">
+<select class="w-full h-9 pl-8 pr-8 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface appearance-none focus:outline-none focus:bg-surface-container-lowest shadow-sm" data-sel="rentang">
+<option selected="">Hari ini (01 Nov 2026)</option>
+<option>24 Jam Terakhir</option>
+<option>7 Hari Terakhir</option>
+<option>Kustom Rentang Tanggal...</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-[16px] text-outline pointer-events-none">calendar_today</span>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-[16px] text-outline pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+
+<div class="md:col-span-3 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold">Pengguna</label>
+<div class="relative">
+<select class="w-full h-9 pl-8 pr-8 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface appearance-none focus:outline-none focus:bg-surface-container-lowest shadow-sm" data-sel="user">
+<option selected="">Semua Pengguna</option>
+<option>dr. Aris Pratama, Sp.PD (RMO)</option>
+<option>Ns. Tri Wahyuni, S.Kep (Ka. Tim)</option>
+<option>Dian Kurnia, S.Kom (IT Admin)</option>
+<option>dr. Hendra Wicaksono (RMO)</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-[16px] text-outline pointer-events-none">account_circle</span>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-[16px] text-outline pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+
+<div class="md:col-span-3 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold">Unit / Bangsal</label>
+<div class="relative">
+<select class="w-full h-9 pl-8 pr-8 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface appearance-none focus:outline-none focus:bg-surface-container-lowest shadow-sm" data-sel="unit">
+<option selected="">Semua Unit (8 Bangsal)</option>
+<option>Lt. 7 Rawat Inap Dewasa (W-07A)</option>
+<option>ICU / HCU Sentral</option>
+<option>Sun Flower Pediatrik (Lt. 4)</option>
+<option>Chrysant / Fortune Eksekutif</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-[16px] text-outline pointer-events-none">apartment</span>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-[16px] text-outline pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+
+<div class="md:col-span-3 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold">Klasifikasi Aksi</label>
+<div class="relative">
+<select class="w-full h-9 pl-8 pr-8 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface appearance-none focus:outline-none focus:bg-surface-container-lowest shadow-sm" data-sel="aksi">
+<option selected="">Semua Aksi (8 Jenis)</option>
+<option>Buka Nama Lengkap (Unmask)</option>
+<option>Impor Census EMR</option>
+<option>Ubah SOAP / SBAR Pasien</option>
+<option>Terima Handover Shift</option>
+<option>Tutup Tindak Lanjut</option>
+<option>Cetak / Unduh Laporan</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-[16px] text-outline pointer-events-none">filter_list</span>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-[16px] text-outline pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+</div>
+
+<div class="flex items-center gap-space-sm pt-1">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-outline">search</span>
+<input class="w-full h-9.5 pl-9 pr-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-sm" placeholder="Cari ID Log, NIK, No. Rekam Medis (Admission/MR No), atau IP Address..." type="text"/>
+</div>
+<button class="h-9.5 px-3.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center gap-1 hover:bg-surface-container-high transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset Filter</span>
+</button>
+</div>
+</div>
+
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4">Waktu &amp; Timestamp</th>
+<th class="py-3 px-4">Pengguna &amp; Peran</th>
+<th class="py-3 px-4">Aksi Audit</th>
+<th class="py-3 px-4">Objek &amp; Target Pasien/Data</th>
+<th class="py-3 px-4">Unit Bangsal</th>
+<th class="py-3 px-4 text-center">Status Verifikasi</th>
+<th class="py-3 px-3 text-right">Rincian</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent font-body-sm text-body-sm" data-slot="rows"></tbody>
+</table>
+</div>
+
+<div class="px-4 py-3 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span>Menampilkan <strong class="text-on-surface font-data-mono">{{k.shown}}</strong> dari <strong class="text-on-surface font-data-mono">{{k.total}}</strong> entri log</span>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span></span>
+<select class="bg-surface-container-lowest px-2 py-0.5 rounded font-label-md text-label-md text-on-surface shadow-sm focus:outline-none" data-sel="x">
+<option selected="">10</option>
+<option>25</option>
+<option>50</option>
+<option>100</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface-variant opacity-50 cursor-not-allowed flex items-center shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+<span class="text-[11px] ml-0.5">Sebelumnya</span>
+</button>
+<button class="w-7 h-7 rounded bg-primary text-on-primary font-bold shadow-sm" type="button">1</button>
+<button class="w-7 h-7 rounded bg-surface-container-lowest hover:bg-surface-container-high transition-colors font-medium shadow-sm" type="button">2</button>
+<button class="w-7 h-7 rounded bg-surface-container-lowest hover:bg-surface-container-high transition-colors font-medium shadow-sm" type="button">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-7 h-7 rounded bg-surface-container-lowest hover:bg-surface-container-high transition-colors font-medium shadow-sm" type="button">185</button>
+<button class="px-2 py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-primary flex items-center transition-colors shadow-sm" type="button">
+<span class="text-[11px] mr-0.5">Berikutnya</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div></main></div>

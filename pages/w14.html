@@ -1,0 +1,440 @@
+<!--bodyclass:bg-background font-body-md text-body-md text-on-surface antialiased--><aside class="fixed left-0 top-0 h-full w-64 bg-primary z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)] overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between bg-primary-container/40 shrink-0"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-secondary-container flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold leading-none">S</div><div class="flex flex-col"><span class="font-label-lg text-label-lg text-on-primary tracking-tight font-bold leading-tight">SILOAM</span><span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Inpatient Ward</span></div></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-primary-container text-primary-fixed">EMR-v4</span></div><div class="px-space-md py-space-sm"><p class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim/70 px-space-md mb-space-xs">Clinical Workflow</p><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container-lowest/10 text-on-primary font-bold border-l-[3px] border-secondary-container pl-[9px]"><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="pasien &amp; handover" data-path="pasien-and-handover" href="#">Pasien &amp; Handover</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="serah terima shift" data-path="serah-terima-shift" href="#">Serah Terima Shift</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="impor census" data-path="impor-census" href="#">Impor Census</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="tindak lanjut" data-path="tindak-lanjut" href="#">Tindak Lanjut</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="riwayat impor" data-path="riwayat-impor" href="#">Riwayat Impor</a></nav></div><div class="px-space-md py-space-sm"><p class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim/70 px-space-md mb-space-xs">Governance &amp; Unit</p><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container-lowest/10 text-on-primary font-bold border-l-[3px] border-secondary-container pl-[9px]"><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="dashboard manajemen" data-path="dashboard-manajemen" href="#">Dashboard Manajemen</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="pengguna &amp; hak akses" data-path="pengguna-and-hak-akses" href="#">Pengguna &amp; Hak Akses</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="master ward &amp; sesi" data-path="master-ward-and-sesi" href="#">Master Ward &amp; Sesi</a><a class="flex items-center px-space-md py-space-sm rounded-lg bg-surface-container-lowest/10 text-on-primary font-bold border-l-[3px] border-secondary-container pl-[9px] transition-colors font-label-lg text-label-lg" data-nav="jejak audit (audit log)" data-path="w-13-jejak-audit-audit-log" href="#">Jejak Audit (Audit Log)</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-primary-fixed-dim hover:bg-surface-container-lowest/10 hover:text-on-primary transition-colors font-label-lg text-label-lg" data-nav="keamanan &amp; retensi" data-path="keamanan-and-retensi" href="#">Keamanan &amp; Retensi</a></nav></div></div><div class="p-space-md mx-space-md mb-space-md rounded-xl bg-primary-container/40 flex items-center justify-between shrink-0"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary-container text-[20px]">verified</span><div><p class="font-label-sm text-label-sm text-on-primary font-bold leading-tight">KARS Akreditasi</p><p class="font-label-sm text-label-sm text-primary-fixed-dim leading-none">Paripurna 2024</p></div></div><span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">info</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-xl z-40 flex items-center justify-between px-margin-desktop shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg font-bold"><span class="material-symbols-outlined text-[18px]">domain</span><span>Lt. 7 Rawat Inap Dewasa (W-07A)</span></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-secondary-container/20 text-on-secondary-container font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Sesi {{sesi.sesi}}</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low text-on-surface-variant font-data-mono text-data-mono"><span class="material-symbols-outlined text-[16px] text-outline">lock_clock</span><span>Auto-lock: {{set.autolock}}m</span></div><button class="relative p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-lg text-label-lg text-on-surface leading-tight font-bold">{{me.nama}}</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">RMO / DPJP</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-margin-desktop py-space-xl bg-background min-h-screen"><div class="flex flex-col w-full">
+
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Tata Kelola Sistem</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Keamanan &amp; Privasi</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Modul W-14: Pengaturan Keamanan &amp; Retensi</span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Kebijakan Keamanan, Privasi &amp; Retensi Data</h1>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[15px] text-primary">policy</span>
+            Kepatuhan UU PDP &amp; Permenkes No. 24/2022
+          </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-lg bg-surface-container-highest text-primary-container font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+            Proteksi Aktif (Enforced)
+          </span>
+</div>
+<p class="text-on-surface-variant font-body-sm text-body-sm">
+          Parameter enkripsi, pembatasan terminal klinis, pembersihan residu rekam medis, dan integritas audit shift Siloam Hospitals.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+
+<button class="inline-flex items-center gap-space-xs px-space-lg py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm font-label-lg text-label-lg font-bold" id="btnSaveConfig" type="button">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Simpan Kebijakan Keamanan</span>
+</button>
+</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-xl">
+
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">lock_clock</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">PRD Sec. 6</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Auto-Lock Sesi Idle</p>
+<p class="font-headline-lg text-headline-lg text-primary tracking-tight mt-0.5">2 Menit</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pencegahan akses terminal tanpa pengawasan &amp; penguncian instan.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-1 text-primary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span>Layar tersamar otomatis</span>
+</div>
+</div>
+
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">auto_delete</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">Data Minimization</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Masa Retensi SOAP Mentah</p>
+<p class="font-headline-lg text-headline-lg text-primary tracking-tight mt-0.5">7 Hari</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Penghapusan permanen teks raw handover pasca pasien ARSIP / KRS.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-1 text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Audit trace tetap abadi</span>
+</div>
+</div>
+
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">fingerprint</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-bold">UU PDP No. 27/22</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">De-Identifikasi Rekam Medis</p>
+<p class="font-headline-lg text-headline-lg text-primary tracking-tight mt-0.5">Anonim Permanen</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">MR &amp; nama disamarkan token kriptografis saat pasien pindah arsip.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-1 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>100% Kepatuhan PDP</span>
+</div>
+</div>
+
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">branding_watermark</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">Anti-Leak</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Watermark Dokumen Handover</p>
+<p class="font-headline-lg text-headline-lg text-primary tracking-tight mt-0.5">Aktif (5 Parameter)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Watermark (nama pengguna, waktu, unit) pada tiap printout.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-1 text-primary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+<span>Auto-logged ke audit trail</span>
+</div>
+</div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop mb-space-xl">
+
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center font-bold text-label-md">01</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Konfigurasi Sesi &amp; Proteksi Terminal Bangsal</h2>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Pencegahan unauthorized access saat workstation ditinggal ronde dokter</p>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">Workstation Mode</span>
+</div>
+
+<div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-xl">
+<label class="font-label-lg text-label-lg text-on-surface font-bold flex items-center justify-between">
+<span>Batas Waktu Tanpa Aktivitas (Auto-Lock Timeout)</span>
+<span class="text-secondary font-label-sm text-label-sm font-bold">Standar PRD: 2 Menit</span>
+</label>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Terminal di ruang perawat Lt. 7 akan segera mengaburkan data klinis dan meminta autentikasi ulang.</p>
+<div class="grid grid-cols-3 gap-space-sm mt-space-sm">
+<label class="cursor-pointer relative">
+<input class="peer sr-only" data-set="AUTOLOCK_MENIT:1" name="timeout_preset" type="radio" value="1"/>
+<div class="p-space-md rounded-lg bg-surface-container-lowest peer-checked:bg-primary peer-checked:text-on-primary flex flex-col items-center justify-center text-center transition-all shadow-sm">
+<span class="font-data-mono text-data-mono font-bold">1 Menit</span>
+<span class="font-label-sm text-label-sm opacity-80 mt-0.5">High Urgency ICU</span>
+</div>
+</label>
+<label class="cursor-pointer relative">
+<input checked="" class="peer sr-only" data-set="AUTOLOCK_MENIT:2" name="timeout_preset" type="radio" value="2"/>
+<div class="p-space-md rounded-lg bg-surface-container-lowest peer-checked:bg-primary peer-checked:text-on-primary flex flex-col items-center justify-center text-center transition-all shadow-sm">
+<span class="font-data-mono text-data-mono font-bold">2 Menit</span>
+<span class="font-label-sm text-label-sm opacity-80 mt-0.5">Rekomendasi Ward</span>
+</div>
+</label>
+<label class="cursor-pointer relative">
+<input class="peer sr-only" data-set="AUTOLOCK_MENIT:5" name="timeout_preset" type="radio" value="5"/>
+<div class="p-space-md rounded-lg bg-surface-container-lowest peer-checked:bg-primary peer-checked:text-on-primary flex flex-col items-center justify-center text-center transition-all shadow-sm">
+<span class="font-data-mono text-data-mono font-bold">5 Menit</span>
+<span class="font-label-sm text-label-sm opacity-80 mt-0.5">Ruang Dokter Pribadi</span>
+</div>
+</label>
+</div>
+</div>
+
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md p-space-md rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">blur_on</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Mode Samaran Layar Instan (Privacy Screen Blur)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Langsung render Gaussian Blur 12px pada seluruh kartu pasien saat timer menyentuh 0 detik sebelum dialihkan ke layar PIN.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" id="toggleBlur" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-start justify-between gap-space-md p-space-md rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">lan</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Wajib Intranet Siloam (IP Whitelist Restrict)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hanya menerima koneksi dari subnet lokal Rumah Sakit <code class="font-data-mono text-data-mono bg-surface-container-high px-1 rounded text-primary">jaringan RS</code> dan VPN Medis Terotentikasi.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" id="toggleIntranet" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-start justify-between gap-space-md p-space-md rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">lock_reset</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Wajib 2-Factor Authentication (Google Workspace RS)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Setiap login pergantian shift diwajibkan validasi via hardware FIDO2 key atau Google Authenticator dokter jaga.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" id="toggle2FA" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-start justify-between gap-space-md p-space-md rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">article_shortcut</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Blokir Tangkapan Layar &amp; Salin Clipboard (DLP Guard)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cegah clipboard logging teks rekam medis ke luar browser dan disable Pintasan Print Screen pada client.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" id="toggleClipboard" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+
+</div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop mb-space-xl">
+
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center font-bold text-label-md">02</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Kebijakan De-Identifikasi &amp; Retensi Data</h2>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Data Minimization &amp; Safe Harbor Anonymization sesuai Permenkes No. 24/2022</p>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">Safe Harbor</span>
+</div>
+
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-bold">Peran Aplikasi Handover sebagai Alat Bantu Kerja Shift</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Sesuai PRD Section 6, lembar handover <strong>bukan pengganti Rekam Medis Elektronik (RME) utama Siloam</strong>. Data catatan SOAP mentah, instruksi cepat, dan parameter checklist shift dirancang untuk dimusnahkan secara berkala guna menekan risiko insiden data breach pada residu workstation.
+            </p>
+</div>
+</div>
+
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-bold flex items-center justify-between">
+<span>Pembersihan Residu Catatan SOAP Mentah Pasca KRS / Arsip</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">Target: 7 Hari</span>
+</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm mt-1">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" data-set="RETENSI_HARI:7" name="soap_retention" type="radio" value="7"/>
+<div class="p-space-md rounded-lg bg-surface-container-low peer-checked:bg-primary-container peer-checked:text-on-primary flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold">7 Hari</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<span class="font-body-sm text-body-sm opacity-90">SOP Standar RS Siloam. Minimal risiko sisa privasi.</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" data-set="RETENSI_HARI:14" name="soap_retention" type="radio" value="14"/>
+<div class="p-space-md rounded-lg bg-surface-container-low peer-checked:bg-primary-container peer-checked:text-on-primary flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold">14 Hari</span>
+<span class="material-symbols-outlined text-[18px]">history</span>
+</div>
+<span class="font-body-sm text-body-sm opacity-90">Klinik khusus pemulihan pasca operasi berulang.</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" data-set="RETENSI_HARI:30" name="soap_retention" type="radio" value="30"/>
+<div class="p-space-md rounded-lg bg-surface-container-low peer-checked:bg-primary-container peer-checked:text-on-primary flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold">30 Hari</span>
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+<span class="font-body-sm text-body-sm opacity-90">Maksimum izin khusus Komite Mutu Medis.</span>
+</div>
+</label>
+</div>
+</div>
+
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">enhanced_encryption</span>
+              Pseudonimisasi Pasien Arsip Otomatis (Token Hash)
+            </span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">Pseudonim (ANON + kode)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Jika pasien tidak lagi muncul dalam 2x impor sensus rawat inap atau berstatus <em>Discharged (KRS)</em>, rekam identitas langsung ditransformasikan:
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-1">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Sebelum Arsip (Aktif Rawat)</span>
+<span class="font-data-mono text-data-mono text-on-surface font-bold">Inisial • MR samar</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Bangsal • bed</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Sesudah Arsip (De-Identified)</span>
+<span class="font-data-mono text-data-mono text-primary font-bold">ANON-2026-X992 • #HASH-B891</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Anonim Permanen</span>
+</div>
+</div>
+</div>
+
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">gavel</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Pengecualian Mutlak: Retensi Audit Trail 5 Tahun</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Mengacu pada UU ITE &amp; Permenkes 24/2022 Pasal 29: seluruh rekaman jejak audit serah terima shift, stempel waktu tanda tangan digital DPJP, dan log pengunduhan <strong>TIDAK DAPAT DIHAPUS (append-only di aplikasi)</strong> selama 5 (lima) tahun, terpisah dari pembersihan data mentah klinis.
+            </p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-lg h-full">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center font-bold text-label-md">03</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Tata Kelola Cetak &amp; Watermark</h2>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Pencegahan kebocoran fisik lembar handover shift</p>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-lg bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-bold">Audit Forensik</span>
+</div>
+
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-bold">Otorisasi Akses Cetak Fisik</label>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<label class="flex items-center justify-between cursor-pointer">
+<span class="font-body-sm text-body-sm text-on-surface">Dokter Penanggung Jawab (DPJP / RMO)</span>
+<input checked="" class="accent-primary w-4 h-4 rounded" disabled="" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between cursor-pointer">
+<span class="font-body-sm text-body-sm text-on-surface">Kepala Ruangan &amp; Ketua Tim Jaga (Charge Nurse)</span>
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between cursor-pointer">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Perawat Pelaksana (Associate Nurse)</span>
+<input class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+</label>
+</div>
+</div>
+
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-bold">Stempel Watermark Dinamis Transparan</label>
+<span class="font-label-sm text-label-sm text-primary font-bold">Forensic Tag</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Watermark dicetak diagonal pada setiap lembar fisik untuk pelacakan sumber kebocoran.</p>
+<div class="relative w-full h-44 rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between overflow-hidden shadow-inner select-none">
+
+<div class="flex flex-col gap-1.5 opacity-40">
+<div class="h-3 w-1/3 bg-on-surface-variant rounded"></div>
+<div class="h-2 w-full bg-on-surface-variant/60 rounded"></div>
+<div class="h-2 w-4/5 bg-on-surface-variant/60 rounded"></div>
+<div class="h-2 w-2/3 bg-on-surface-variant/60 rounded"></div>
+</div>
+
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none transform -rotate-12">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-sm text-center">
+<p class="font-data-mono text-label-sm font-bold text-error tracking-wider uppercase">
+                  [RAHASIA MEDIS - SILOAM HOSPITALS]
+                </p>
+<p class="font-data-mono text-label-sm text-on-surface font-bold">Nama pengguna • Unit</p>
+<p class="font-data-mono text-[10px] text-on-surface-variant">
+                  Contoh cap pada cetakan: nama pengguna • waktu • unit
+                </p>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 opacity-40">
+<div class="h-2 w-3/4 bg-on-surface-variant/60 rounded"></div>
+<div class="h-2 w-1/2 bg-on-surface-variant/60 rounded"></div>
+</div>
+</div>
+</div>
+
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-center justify-between gap-space-sm mt-auto">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">table_chart</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Ekspor Data Agregat Saja</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hapus kolom identitas pribadi (Nama/MR/NIK) pada output CSV manajemen.</span>
+</div>
+</div>
+<input checked="" class="accent-primary w-5 h-5 rounded" type="checkbox"/>
+</div>
+</div>
+</div>
+</div>
+
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">security</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Data Protection Officer (DPO) &amp; Incident Response Siloam</h3>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">24/7 CSIRT Bangsal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Pertanyaan kepatuhan medikolegal, permohonan audit investigasi, atau eskalasi temuan anomali data pasien:
+        </p>
+<div class="flex items-center gap-space-md mt-2 flex-wrap font-data-mono text-data-mono text-primary font-bold">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">mail</span>
+            dpo@siloamhospitals.com
+          </span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">call</span>
+            Ext. 8812 / Emergency Security Gate 8800
+          </span>
+</div>
+</div>
+</div>
+
+<div class="flex flex-col sm:flex-row items-center gap-space-sm shrink-0 w-full md:w-auto">
+
+</div>
+</div>
+
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="bg-primary text-on-primary px-space-lg py-space-md rounded-xl shadow-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">verified</span>
+<span class="font-label-lg text-label-lg font-bold" id="toastMessage">Kebijakan Keamanan berhasil diperbarui ke seluruh terminal bangsal.</span>
+</div>
+</div>
+</div>
+</main></div>
